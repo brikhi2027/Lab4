@@ -36,6 +36,7 @@ Description : Flex Layouts.
 		}		
 	</style>
 
+
 	<style>
 		/* CSS for menu. You don't need to touch this part */
 		.menu { background-color: #e6e6e6; }
@@ -69,50 +70,112 @@ Description : Flex Layouts.
         img { max-width: 100%; height: auto; }
         .container { 
 			/*I need some CSS codes.*/
+			display: flex;
+			flex-direction: column;
+			box-sizing: border-box;
 		 }
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width: 100%;}
 		.body { 
 			/*I need some CSS codes.*/
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: row;
 		}
         .main { 
 			padding: 15px; 
 			/*I need some CSS codes.*/
+			box-sizing: border-box;
+			flex: 1;
 		}
         
         .news-item { padding: 10px; }
         .row { 
 			/*I need some CSS codes.*/
+			/*changed this for columns, added display:flex*/
+			display: flex;
+			flex-direction: row;
+			box-sizing: border-box;
+		}
+
+		.menu ul{
+			display: flex;
+			flex-direction: column;
 		}
         
 
         @media screen and (min-width: 769px) {
-            .menu { width: 150px; }     
+            .menu { width: 150px; }   
 			.large { 
 				/*I need some CSS codes.*/
+				width: 100%;
+				box-sizing: border-box;
 			}
 			.medium { 
 				/*I need some CSS codes.*/
+				width: 70%;
+				box-sizing: border-box;
 			}
 			.small { 
 				/*I need some CSS codes.*/
+				width: 30%;
+				box-sizing: border-box;
 			 }       
         }
 
         @media screen and (max-width: 768px) {
+			.large { 
+				/*I need some CSS codes.*/
+				width: 100%;
+				box-sizing: border-box;
+			}
+			.medium { 
+				/*I need some CSS codes.*/
+				width: 60%;
+				box-sizing: border-box;
+			}
+			.small { 
+				/*I need some CSS codes.*/
+				width: 40%;
+				box-sizing: border-box;
+			 }   
 			.body { 
 				/*I need some CSS codes.*/
+				flex-direction: column;
 			}
             .menu ul { 
 				/*I need some CSS codes.*/
+				flex-direction: row;
 			 }            
             /*I need some CSS codes.*/
         }
 
         @media screen and (max-width: 480px) {
+			.menu{width: 100%}
             .news-item header h1 { font-size: 18px; }
             .medium, .small { 
 				/*I need some CSS codes.*/
-			 }
+				float: none;
+				width: 100%;
+				box-sizing: border-box;
+			}
+			 .large { 
+				/*I need some CSS codes.*/
+				width: 100%;
+				box-sizing: border-box;
+				flex-direction: column;
+			}
+			.medium { 
+				/*I need some CSS codes.*/
+				width: 100%;
+				box-sizing: border-box;
+				flex-direction: column;
+			}
+			.small { 
+				/*I need some CSS codes.*/
+				width: 100%;
+				box-sizing: border-box;
+				flex-direction: column;
+			 }   
         }
     </style>
 </head>
