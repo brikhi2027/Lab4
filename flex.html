@@ -2,8 +2,8 @@
 =========================================================
 Name        : index.html
 Assignment  : Lab 4 Exercise C
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
-Submission  : May 21, 2030
+Author(s)   : Bhavna Rikhi, Anastasia Zaharia
+Submission  : Feb 7, 2024
 Description : Flex Layouts.
 =========================================================
 -->
@@ -91,9 +91,8 @@ Description : Flex Layouts.
         .news-item { padding: 10px; }
         .row { 
 			/*I need some CSS codes.*/
-			/*changed this for columns, added display:flex*/
 			display: flex;
-			flex-direction: row;
+			flex-wrap:wrap;
 			box-sizing: border-box;
 		}
 
@@ -154,9 +153,9 @@ Description : Flex Layouts.
             .news-item header h1 { font-size: 18px; }
             .medium, .small { 
 				/*I need some CSS codes.*/
-				float: none;
 				width: 100%;
 				box-sizing: border-box;
+				align-items: center;
 			}
 			 .large { 
 				/*I need some CSS codes.*/
@@ -233,7 +232,7 @@ Description : Flex Layouts.
 					<!-- Medium news item -->
 					<div class="medium news-item">
 						<header>
-							<h1>Your Name Takes a Historic Spacewalk Near the ISS</h1>
+							<h1>Bhavna Rikhi Takes a Historic Spacewalk Near the ISS</h1>
 						</header>
 						<img src="images/medium.jpg" alt="Medium Image">
 						<article>
